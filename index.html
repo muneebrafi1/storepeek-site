@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StorePeek — Privacy Policy</title>
+<meta name="description" content="Privacy policy for StorePeek, a Chrome extension that inspects Shopify storefronts locally in your browser.">
+<style>
+  :root{--bg:#fff;--text:#1b1b1f;--text-2:#55555e;--text-3:#74747f;--border:#ececef;--accent:#0891b2;--inset:#fafafa}
+  @media (prefers-color-scheme:dark){:root{--bg:#0d0d10;--text:#f3f3f5;--text-2:#a2a2ac;--text-3:#8a8a95;--border:#26262c;--accent:#22d3ee;--inset:#151519}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,system-ui,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 24px 80px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:40px}
+  .mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(140deg,#0891b2,#0e7490);flex:none}
+  h1{font-size:30px;letter-spacing:-.03em;margin:0 0 6px}
+  .sub{color:var(--text-3);font-size:14px;margin:0}
+  h2{font-size:19px;letter-spacing:-.02em;margin:40px 0 10px}
+  p,li{color:var(--text-2)}
+  li{margin-bottom:7px}
+  .lead{font-size:18px;color:var(--text);background:var(--inset);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin:0}
+  table{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{color:var(--text-3);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em}
+  code{background:var(--inset);border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:13.5px}
+  a{color:var(--accent)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--border);color:var(--text-3);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark"></div>
+    <div>
+      <h1>StorePeek</h1>
+      <p class="sub">Privacy Policy · Last updated 25 July 2026</p>
+    </div>
+  </header>
+
+  <p class="lead"><strong>StorePeek collects no data.</strong> Everything it does happens inside your browser, on your device. There is no account, no server, and nothing is ever uploaded.</p>
+
+  <h2>What StorePeek does</h2>
+  <p>StorePeek is a Chrome extension that identifies the theme, storefront apps, tracking pixels and payment methods used by a Shopify store. When you open the panel and run a scan, it reads the publicly visible content of the page you are currently viewing — the script addresses, page markup, and public JavaScript values the store itself exposes to every visitor — and compares them against a list of known signatures bundled inside the extension.</p>
+  <p>That comparison happens entirely on your device. The extension has no backend.</p>
+
+  <h2>Information we collect</h2>
+  <p>None. Specifically:</p>
+  <ul>
+    <li><strong>No personal information.</strong> StorePeek never asks for, receives or stores your name, email address, or any other identifying detail.</li>
+    <li><strong>No browsing history.</strong> The extension cannot read any page until you grant access, and it only ever reads the tab you are actively inspecting.</li>
+    <li><strong>No analytics or telemetry.</strong> There is no tracking code of any kind in the extension.</li>
+    <li><strong>No accounts.</strong> There is nothing to sign up for.</li>
+    <li><strong>No transmission.</strong> Scan results are shown to you and cached on your own device. They are never sent anywhere.</li>
+  </ul>
+
+  <h2>Information stored on your device</h2>
+  <p>So the panel can work smoothly, StorePeek saves a small amount of data using Chrome's local storage. This never leaves your computer, and you can erase it at any time.</p>
+  <ul>
+    <li>The results of your most recent scan, so the panel can restore them when you switch tabs.</li>
+    <li>A list of up to ten recently scanned store addresses, shown on the extension's home screen. You can delete this at any time with the <em>Clear</em> button.</li>
+  </ul>
+  <p>Uninstalling the extension removes all of it.</p>
+
+  <h2>Network requests</h2>
+  <p>StorePeek makes no requests to us or to any third party. To read a store's payment methods, it requests that same store's own public cart page — a request that goes to the store you are already visiting, exactly as your browser would when you click through the site. No other requests are made.</p>
+  <p>App and theme links shown in results are ordinary links. Nothing is sent when the results are displayed; a link only opens if you choose to click it.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it is needed</th></tr>
+    <tr><td><code>activeTab</code></td><td>Read the public content of the page you are inspecting — only after you invoke the extension.</td></tr>
+    <tr><td><code>scripting</code></td><td>Run the local detection routine on that page.</td></tr>
+    <tr><td><code>storage</code></td><td>Keep your latest results and recent-store list on your device.</td></tr>
+    <tr><td><code>sidePanel</code></td><td>Show results in Chrome's side panel.</td></tr>
+    <tr><td>Host access <em>(optional)</em></td><td>Off by default. If you turn on “Always allow on stores”, StorePeek can scan as you browse instead of you invoking it each time. Shopify stores run on their own custom domains, so Chrome can only offer all-sites access — detection still runs locally and still sends nothing anywhere.</td></tr>
+  </table>
+
+  <h2>Children</h2>
+  <p>StorePeek is a tool for people working with online stores and is not directed at children under 13. It collects no data from anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the revised version will be posted on this page with a new date. Any feature that would transmit data will always be optional and clearly explained before it is enabled.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or the extension: <a href="mailto:iammuneebrafi@gmail.com">iammuneebrafi@gmail.com</a></p>
+
+  <footer>
+    StorePeek is an independent tool. It is not affiliated with, endorsed by, or sponsored by Shopify Inc.
+  </footer>
+</div>
+</body>
+</html>
