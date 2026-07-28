@@ -33,14 +33,14 @@
     <div class="mark"></div>
     <div>
       <h1>StorePeek</h1>
-      <p class="sub">Privacy Policy · Last updated 25 July 2026</p>
+      <p class="sub">Privacy Policy · Last updated 28 July 2026</p>
     </div>
   </header>
 
   <p class="lead"><strong>StorePeek collects no data.</strong> Everything it does happens inside your browser, on your device. There is no account, no server, and nothing is ever uploaded.</p>
 
   <h2>What StorePeek does</h2>
-  <p>StorePeek is a Chrome extension that identifies the theme, storefront apps, tracking pixels and payment methods used by a Shopify store. When you open the panel and run a scan, it reads the publicly visible content of the page you are currently viewing — the script addresses, page markup, and public JavaScript values the store itself exposes to every visitor — and compares them against a list of known signatures bundled inside the extension.</p>
+  <p>StorePeek is a Chrome extension that identifies the theme, storefront apps, tracking pixels, payment methods and public catalog stats of a Shopify store. When you open the panel and run a scan, it reads the publicly visible content of the page you are currently viewing — the script addresses, page markup, and public JavaScript values the store itself exposes to every visitor — and compares them against a list of known signatures bundled inside the extension.</p>
   <p>That comparison happens entirely on your device. The extension has no backend.</p>
 
   <h2>Information we collect</h2>
@@ -62,14 +62,14 @@
   <p>Uninstalling the extension removes all of it.</p>
 
   <h2>Network requests</h2>
-  <p>StorePeek makes no requests to us or to any third party. To read a store's payment methods, it requests that same store's own public cart page — a request that goes to the store you are already visiting, exactly as your browser would when you click through the site. No other requests are made.</p>
-  <p>App and theme links shown in results are ordinary links. Nothing is sent when the results are displayed; a link only opens if you choose to click it.</p>
+  <p>StorePeek makes no requests to us or to any third party. To read a store's payment methods and catalog stats, it requests a few of that same store's own public pages — its product list, sitemap and cart page (for example <code>/products.json</code>) — requests that go to the store you are already visiting, exactly as your browser would if you opened those pages yourself. No other requests are made.</p>
+  <p>Links shown in results are ordinary links — to the Shopify App Store, a theme vendor's site, or a platform's public ad-transparency library (such as the Meta Ad Library). Nothing is sent when the results are displayed; a link only opens if you choose to click it. Some vendor links may in the future be affiliate links that earn StorePeek a commission at no cost to you; if that is ever active, a disclosure is shown inside the extension. Affiliate links are ordinary links and transmit nothing about you or your browsing.</p>
 
   <h2>Permissions</h2>
   <table>
     <tr><th>Permission</th><th>Why it is needed</th></tr>
     <tr><td><code>activeTab</code></td><td>Read the public content of the page you are inspecting — only after you invoke the extension.</td></tr>
-    <tr><td><code>scripting</code></td><td>Run the local detection routine on that page.</td></tr>
+    <tr><td><code>scripting</code></td><td>Run the local detection routine on that page, including reading the store's own public product list and cart pages.</td></tr>
     <tr><td><code>storage</code></td><td>Keep your latest results and recent-store list on your device.</td></tr>
     <tr><td><code>sidePanel</code></td><td>Show results in Chrome's side panel.</td></tr>
     <tr><td>Host access <em>(optional)</em></td><td>Off by default. If you turn on “Always allow on stores”, StorePeek can scan as you browse instead of you invoking it each time. Shopify stores run on their own custom domains, so Chrome can only offer all-sites access — detection still runs locally and still sends nothing anywhere.</td></tr>
